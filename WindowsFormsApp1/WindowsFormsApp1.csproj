@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6A422FB6-DF02-4DFA-B137-9CD27B051BD6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp1</RootNamespace>
+    <AssemblyName>WindowsFormsApp1</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\Downloads\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Ajouter Rdv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ajouter Rdv.Designer.cs">
+      <DependentUpon>Ajouter Rdv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AjouterIntervention.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AjouterIntervention.Designer.cs">
+      <DependentUpon>AjouterIntervention.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ajouterPati.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ajouterPati.Designer.cs">
+      <DependentUpon>ajouterPati.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Calendrier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calendrier.Designer.cs">
+      <DependentUpon>Calendrier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsulterRendezVous.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsulterRendezVous.Designer.cs">
+      <DependentUpon>ConsulterRendezVous.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsutationPatients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsutationPatients.Designer.cs">
+      <DependentUpon>ConsutationPatients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Intervention.cs" />
+    <Compile Include="LinstedDesInterventions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LinstedDesInterventions.Designer.cs">
+      <DependentUpon>LinstedDesInterventions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDIParent1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIParent1.Designer.cs">
+      <DependentUpon>MDIParent1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ordannace.cs" />
+    <Compile Include="Patient.cs" />
+    <Compile Include="Payement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payement.Designer.cs">
+      <DependentUpon>Payement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rdv.cs" />
+    <Compile Include="Seance.cs" />
+    <EmbeddedResource Include="Ajouter Rdv.resx">
+      <DependentUpon>Ajouter Rdv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AjouterIntervention.resx">
+      <DependentUpon>AjouterIntervention.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ajouterPati.resx">
+      <DependentUpon>ajouterPati.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calendrier.resx">
+      <DependentUpon>Calendrier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsulterRendezVous.resx">
+      <DependentUpon>ConsulterRendezVous.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsutationPatients.resx">
+      <DependentUpon>ConsutationPatients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LinstedDesInterventions.resx">
+      <DependentUpon>LinstedDesInterventions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIParent1.resx">
+      <DependentUpon>MDIParent1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payement.resx">
+      <DependentUpon>Payement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
