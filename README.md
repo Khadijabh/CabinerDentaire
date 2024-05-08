@@ -1,6 +1,6 @@
 # GestionCabinetMedecinDentaire
 KHADIJA
-KHAWLA
+KHAaaaaWLA
 Note : i used just data serialisation no database ;D.
 Programme utilisé pour gérrer un cabinet de medecin dentaire créer en C# .NET
 1- la secrétaire se connecte pour ajouter le patient
